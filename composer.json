@@ -1,0 +1,9 @@
+{
+    "name": "mmeyer2k/semlock",
+    "description": "semaphores + closures",
+    "type": "library",
+    "require": {
+        "ext-sysvsem": "^7.0"
+    },
+    "license": "MIT"
+}
