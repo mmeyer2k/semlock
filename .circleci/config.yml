@@ -4,7 +4,7 @@ jobs:
     parallelism: 1
     shell: /bin/bash --login
     docker:
-      - image: circleci/php7.0
+      - image: circleci/php:7.0
     steps:
       - checkout
       - run:
