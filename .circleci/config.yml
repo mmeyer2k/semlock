@@ -9,4 +9,4 @@ jobs:
       - checkout
       - run: sudo docker-php-ext-install sysvsem
       - run: composer --no-interaction --no-scripts --no-ansi --prefer-dist -a install
-      - run: php test.php
+      - run: cd $CIRCLE_WORKING_DIRECTORY ; php test.php
