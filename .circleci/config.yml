@@ -7,4 +7,5 @@ jobs:
       - image: circleci/php:7.0
     steps:
       - checkout
+      - run: apt install -y php7.0-sysvsem
       - run: composer --no-interaction --no-scripts --no-ansi --prefer-dist -a install
