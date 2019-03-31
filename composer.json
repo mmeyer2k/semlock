@@ -5,5 +5,8 @@
     "require": {
         "ext-sysvsem": "^7.0"
     },
+    "classmap": [
+        "SemLock.php"    
+    ]
     "license": "MIT"
 }
