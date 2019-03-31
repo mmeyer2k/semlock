@@ -7,6 +7,6 @@
     },
     "classmap": [
         "SemLock.php"    
-    ]
+    ],
     "license": "MIT"
 }
