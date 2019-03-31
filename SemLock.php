@@ -27,7 +27,7 @@ class SemLock
         // Wait for semaphore
         $acquired = sem_acquire($sem);
 
-        //
+        // If semaphore can not be obtained, throw exception
         if (!$acquired) {
             throw new \Exception('Could not lock semaphore.');
         }
