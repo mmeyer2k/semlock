@@ -7,5 +7,5 @@ jobs:
     steps:
       - run: sudo docker-php-ext-install sysvsem
       - run: git clone https://github.com/mmeyer2k/semlock .
-      - run: cd /home/circieci/project/semlock ; composer --no-interaction --no-scripts --no-ansi --prefer-dist -a install
-      - run: cd /home/circieci/project/semlock ; php test.php
+      - run: composer --no-interaction --no-scripts --no-ansi --prefer-dist -a install
+      - run: /usr/bin/php test.php
