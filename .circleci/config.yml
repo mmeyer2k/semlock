@@ -6,7 +6,6 @@ jobs:
       - image: circleci/php:7.0
     steps:
       - run: sudo docker-php-ext-install sysvsem
-      - run: git clone https://github.com/mmeyer2k/semlock $CIRCLE_WORKING_DIRECTORY
-      - run: whoami ; pwd ; echo $CIRCLE_WORKING_DIRECTORY
-      - run: cd $CIRCLE_WORKING_DIRECTORY ; composer --no-interaction --no-scripts --no-ansi --prefer-dist -a install
-      - run: cd $CIRCLE_WORKING_DIRECTORY ; php test.php
+      - run: git clone https://github.com/mmeyer2k/semlock /home/circieci/semlock
+      - run: cd /home/circieci/semlock ; composer --no-interaction --no-scripts --no-ansi --prefer-dist -a install
+      - run: cd /home/circieci/semlock ; php test.php
