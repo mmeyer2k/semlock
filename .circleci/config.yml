@@ -2,11 +2,10 @@ version: 2
 jobs:
   build:
     parallelism: 1
-    shell: /bin/bash --login
     docker:
       - image: circleci/php:7.0
     steps:
       - checkout
       - run: sudo docker-php-ext-install sysvsem
       - run: composer --no-interaction --no-scripts --no-ansi --prefer-dist -a install
-      - run: php /home/circleci/project/semlock/test.php
+      - run: php /home/circleci/project/test.php
