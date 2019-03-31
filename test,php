@@ -1,0 +1,13 @@
+<?php
+
+require __DIR__ . '/vendor/autoload.php';
+
+$r = 'asdffdsa';
+
+$r = \mmeyer2k\SemLock::synchronize('asdf', function() use ($test) {
+    return $test;
+});
+
+if ($r !== $test) {
+    exit(1);
+}
