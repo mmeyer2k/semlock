@@ -6,10 +6,10 @@
         "ext-sysvsem": "^7.0",
         "php": "^7.0"
     },
-    "autoload": [
+    "autoload": {
         "files": [
             "SemLock.php"
         ]
-    ],
+    },
     "license": "MIT"
 }
