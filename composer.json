@@ -1,0 +1,15 @@
+{
+    "name": "mmeyer2k/semlock",
+    "description": "semaphores + closures",
+    "type": "library",
+    "require": {
+        "ext-sysvsem": "^7.0",
+        "php": "^7.0"
+    },
+    "autoload": {
+        "files": [
+            "SemLock.php"
+        ]
+    },
+    "license": "MIT"
+}
