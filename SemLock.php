@@ -1,4 +1,6 @@
-<?php
+<?php 
+
+declare(strict_types = 1);
 
 namespace mmeyer2k;
 
@@ -14,6 +16,7 @@ class SemLock
      */
     public static function synchronize(string $semkey, \Closure $closure)
     {
+        // Convert user-provided key to a hashed integer
         $semkey = self::key2int($semkey);
 
         // Get the semaphore
