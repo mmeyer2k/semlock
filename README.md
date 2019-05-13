@@ -1,4 +1,4 @@
-# semlock
+# :gem:semlock
 A clean way to wrap semaphores around closures to perform exclusive execution of code.
 Semlock also allows for naming semaphones with descriptive strings instead of ints.
 
