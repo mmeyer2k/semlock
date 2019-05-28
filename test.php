@@ -1,13 +1,12 @@
-<?php
+<?php declare(strict_types=1);
+
 error_reporting(E_ALL);
 
 require __DIR__ . '/vendor/autoload.php';
 
-#require 'SemLock.php';
-
 $test = 'asdfasdfasdfasdf';
 
-$r = \mmeyer2k\SemLock::synchronize('asdf', function() use ($test) {
+$r = \mmeyer2k\SemLock::synchronize('asdf', function () use ($test) {
     return $test;
 });
 
