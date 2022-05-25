@@ -3,8 +3,8 @@
     "description": "semaphores + closures",
     "type": "library",
     "require": {
-        "ext-sysvsem": "^7.0",
-        "php": "^7.0"
+        "ext-sysvsem": "^7.0|^8.0",
+        "php": "^7.0|^8.0"
     },
     "autoload": {
         "files": [
