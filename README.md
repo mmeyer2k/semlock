@@ -12,7 +12,7 @@ https://mmeyer2k.github.io/posts/php-exclusive-execution-closure-semaphore
 ## Use
 ### Basic Usage
 ```php
-\mmeyer2k\SemLock::synchronize('increment_value', function () {
+\mmeyer2k\SemLock::synchronize('some_key', function () {
     $x = get_number_from_database();
 
     $x++;
@@ -25,7 +25,7 @@ https://mmeyer2k.github.io/posts/php-exclusive-execution-closure-semaphore
 ### Handling return values
 The `semlock` library will pass return values from the closure back to the calling context.
 ```php
-$returned = \mmeyer2k\SemLock::synchronize('increment_value', function () {
+$returned = \mmeyer2k\SemLock::synchronize('some_key', function () {
     return 'something';
 });
 
